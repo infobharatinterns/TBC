@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Gabriela&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gabriela", serif;
+    font-weight: 900;
+    transition: all .2s linear;
+    
+}
+.navbar{
+    transition:  0.66s;
+}
+#heading{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 7px solid #1e1f21;
+}
+
+.gall{
+    justify-content: center;
+    align-items: center;
+}
+.gall #carouselExample{
+    width: 50%;
+    height: 50%;
+}
+#typ{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.box{
+    width: 50px;
+    height: 300px;
+    background-color: #1e1f21;
+    margin: 10px;
+    cursor: pointer;
+    transition: width 1s ease-in, height 1s ease-in;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.hidden:hover + .box:hover{
+    width: 500px;
+    height: 300px;
+}
+.hidden{
+    display: none;
+}
+.b1{
+    background-image: url('MenuImg/gallty\ \(5\).jpg');
+}
+.b2{
+    background-image: url('MenuImg/gallty\ \(6\).jpg');
+}
+.b3{
+    background-image: url('MenuImg/gallty\ \(7\).jpg');
+}
+.b4{
+    background-image: url('MenuImg/gallty\ \(8\).jpg');
+}
+.b5{
+    background-image: url('MenuImg/gallty\ \(9\).jpg');
+}
+
+/*type2*/
+#ty2{
+    height: contain;
+    background-color: #1e1f21;
+}
+#ty2 .cont{
+    width: 90%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}   
+.block{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.block img{
+    display: block;
+    width: 100%;
+    border-radius:5px;
+}
+.block:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+/*type-3*/
+#ty3{
+    height: contain;
+    padding-top:200px;
+}
+#ty3 .grid-wrapper div img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper .wide{
+    grid-row: span 2;
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/*Footer*/
+#foot-gal{
+
+    background-color: #1e1f21;
+    color: white;
+}

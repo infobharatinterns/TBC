@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Gabriela&display=swap');
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gabriela", serif;
+    font-weight: 900;
+    transition: all .2s linear;
+    
+}
+body{
+    display: grid;
+}
+
+.navbar{
+    transition:  0.66s;
+}
+
+#home{
+    height: contain;
+    width: 100%;
+    padding: 10px;
+    transition:  0.77s;
+    background-color: white;
+}
+#home .row div:nth-child(2)
+{
+    text-align: center;
+    align-content: center;
+}
+#about{
+    background-color: #162A2C;
+    color: white;
+    transition:  0.77s;
+
+}
+#about .container{
+    padding: 90px 19px;
+}
+#menu{ 
+    transition:  0.77s;
+}
+#menu .container{
+    padding: 70px 19px;
+}
+
+.imghov:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+#order1{
+    transition:  0.77s;
+    height: contain;
+    border-radius: 100px;
+    border: 5px solid white;
+    color: white;
+    padding: 10px 10px;
+    background-color: #162A2C;
+}
+#chef{
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,1)),url('MenuImg/bgim4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition:  0.77s;
+    
+}
+#chef .container{
+    padding: 90px 19px;
+}
+
+
+#moreinfo{
+    margin: 20px;
+    border-radius: 40px;
+    height: contain;
+    transition:  0.77s;
+}
+
+
+#moreinfo .row div:nth-child(1):hover, #moreinfo .row div:nth-child(2):hover,#moreinfo .row div:nth-child(3):hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#moreinfo .container .row div{
+    margin-bottom: 40px;
+}
+#foot{
+    background-color: #162A2C;
+    color: white;
+}
+
